@@ -1,15 +1,42 @@
+/* roboto-regular - latin_cyrillic */
 @font-face {
-  font-family: Arial;
-  src: local("Arial");
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
+  src: local(''),
+  url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
+/* roboto-500 - latin_cyrillic */
 @font-face {
-  font-family: "Arial Black";
-  src: local("Arial Black");
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+  url('../fonts/roboto-v30-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/roboto-v30-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
+  src: local(''),
+  url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-900 - latin_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(''),
+  url('../fonts/roboto-v30-latin_cyrillic-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/roboto-v30-latin_cyrillic-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 html {
@@ -26,17 +53,21 @@ html {
   margin-bottom: 0;
   margin-inline-end: 0;
   margin-inline-start: 0;
+
+  /*Additions*/
+  border: var(--c-body-border-outline);
+  outline: var(--c-body-border-outline);
 }
 
 
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  color: var(--c-white-txt);
-  background-color: var(--с-brown-dark-bg);
+  font-size: 12px;
+  color: var(--c-body-txt);
+  background-color: var(--с-body-bg);
 }
 
 img {
@@ -107,7 +138,17 @@ iframe {
 */
 
 section {
-padding: 50px 0;
+  padding:  var(--paddging-section);
 }
 
+h1 {
+  font-weight: 900;
+}
 
+button {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 700;
+}

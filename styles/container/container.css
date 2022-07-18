@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  max-width: var(--max-width-container);
+}
+
+.container:not(.container--last ){
+  margin-bottom: 30px;
+}
+
+@media  (min-width: 780px) {
+  :root {
+    --min-height-header-container: 528px;
+    --paddging-container: 0 30px;
+    --paddging-section: 30px 30px;
+    --max-width-container: 1024px;
+  }
+
+  .container:not(.container--last) {
+    margin-bottom: 40px;
+  }
+
+}
+
+@media  (min-width: 1600px) {
+  :root {
+    --min-height-header-container: 732px;
+    --paddging-container: 0 200px;
+    --paddging-section: 30px 200px;
+    --max-width-container: 1600px;
+  }
+}

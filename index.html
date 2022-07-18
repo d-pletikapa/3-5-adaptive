@@ -1,14 +1,145 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-900.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="styles/style.css">
   <title>3-5 Adaptive training</title>
 </head>
 <body>
+
+<header class="header">
+  <div class="container">
+
+  <nav class="header__nav">
+    <a class="header__logo logo" href="#">
+    <img src="styles/header/__img-header/Logo.png" alt="Logo"></a>
+    <ul class="header__list">
+    <li class="header__item header__item--tel"><a href="tel:79625561234">+7 (962) 556 - 1234</a></li>
+      <li class="header__item"><a class="header__call-back-link" href="#">
+        Перезвоните мне</a>
+        <button class="header__call-back-btn">
+          </button>
+      </li>
+    </ul>
+  </nav>
+
+    <section class="header__section">
+      <h1 class="header__title">Заголовок c уникальным торговым предложение по системе 4U</h1>
+      <p class="header__text">Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему.</p>
+      <button class="header__more-info-btn" name="call-back" type="button" value="call-back">Подробнее</button>
+    </section>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+  <section class="main__section-general">
+    <h2 class="main__title">Уникальный заголовок для преимущества компании</h2>
+
+<!--     <p class="main__subtitle"><svg width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+<!--       <rect width="43" height="2" fill="#383A4C"/></svg>О нас<svg width="43" height="2" viewBox="0 0 43 2" fill="none" xmlns="http://www.w3.org/2000/svg"> -->
+<!--       <rect width="43" height="2" fill="#383A4C"/> -->
+<!--     </svg></p> -->
+
+    <p class="main__subtitle"><span>О нас</span></p>
+
+    <p class="main__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.</p>
+    <ul class="main__list">
+      <li class="main__item">
+        <div class="main__item-counter"></div>
+        <p class="main__item-text">Первое целевое преимущество</p>
+      </li>
+      <li class="main__item">
+        <div class="main__item-counter"></div>
+        <p class="main__item-text">Второе целевое преимущество</p>
+      </li>
+      <li class="main__item">
+        <div class="main__item-counter"></div>
+        <p class="main__item-text">Третье целевое преимущество</p>
+      </li>
+      <li class="main__item">
+        <div class="main__item-counter"></div>
+        <p class="main__item-text">Четвертое целевое преимущество</p>
+      </li>
+    </ul>
+  </section>
+  </div>
+</main>
+
+
+
+
+
+<footer class="footer">
+
+  <div class="container container--deal-bg container--last">
+    <section class="main__section main__section-deal">
+
+      <form class="main__call-back-form" action="https://jsonplaceholder.typicode.com/posts">
+        <h2 class="footer__title">Остались вопросы?</h2>
+        <fieldset class="main__set">
+          <legend>Оставьте номер телефона, и мы перезвоним вам</legend>
+<div class="main__input-box">
+          <label>
+            <input class="main__input" type="text" placeholder="Ваше имя" name="name" value="">
+          </label>
+
+          <label>
+            <input class="main__input" type="text" placeholder="Телефон" name="telephone" value="">
+          </label>
+
+          <label>
+            <input class="main__input" type="text" placeholder="E-mail" name="e-mail" value="">
+          </label>
+</div>
+          <button type="submit">Позвоните мне</button>
+          <p class="main__cookie-agreement">Я даю своё <a href="#">согласие</a> на обработку моих персональных данных.</p>
+
+        </fieldset>
+      </form>
+    </section>
+  </div>
+
+  <div class="container container--last">
+    <section class="footer__section">
+    <ul class="footer__nav-list">
+      <li class="footer__item footer__item--logo">
+        <a class="footer__logo logo" href="#">
+          <img src="styles/header/__img-header/Logo.png" alt="Logo">
+        </a>
+          <p class="footer__item--copy">© 2022 XXXcompany.
+            Все права защищены.</p>
+      </li>
+      <li class="footer__item footer__item--credit">
+          <p class="footer__made-by">
+            Сделано Ивановым Иваном
+          </p>
+      </li>
+
+      <li class="footer__item">
+        <a class="footer__tel" href="tel:79625561234">+7 (962) 556 - 1234</a>
+        <a class="footer__call-back-link" href="#">Перезвоните мне</a>
+        <button class="footer__call-back-btn">
+        </button>
+      </li>
+    </ul>
+    </section>
+    <div class="footer__credit">
+    <p class="footer__made-by">
+      Сделано Ивановым Иваном
+    </p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

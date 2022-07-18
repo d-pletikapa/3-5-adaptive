@@ -1,5 +1,71 @@
+/*mobile*/
 :root {
-  --c-white-bg: #FFFFFF;
-  --c-white-txt: #FFFFFF;
-  --c-white-border-outline: #FFFFFF;
+  --c-body-txt: #FFFFFF;
+  --с-body-bg: #FFFFFF;
+  --c-body-border-outline: transparent;
+  --c-main-txt:#383A4C;
+  --c-body-accent: #23C7EC;
+
+  --f-size-h1: 20px;
+  --f-size-h2: 20px;
+  --f-size-btn: 16px;
+  --f-size-header-text: 14px;
+  --f-size-main-counter-sub-txt:18px;
+  --f-main-subtitle: 16px;
+  --f-size-input: 14px;
+  --f-size-copyright: 8px;
+  --f-size-cookie: 11px;
+
+  --paddging-container: 0 15px;
+  --paddging-section: 0 15px 30px 15px;
+  --max-width-container: 320px;
+  --min-height-header-container: 441px;
+  --min-height-footer-container: 398px;
 }
+
+/*tablet and laptop*/
+@media  (min-width: 780px) {
+  :root {
+    --f-size-h1: 40px;
+    --f-size-h2: 32px;
+    --f-size-btn: 20px;
+    --f-size-tel: 21px;
+
+    --f-size-header-text: 18px;
+    --f-size-text-call-back: 13px;
+    --f-main-subtitle: 20px;
+    --f-footer-subtitle: 20px;
+    --f-size-main-text: 16px;
+    --f-size-input: 20px;
+    --f-size-copyright: 12px;
+    --f-size-cookie: 17px;
+    --min-height-footer-container: 558px;
+    --max-width-container: 1024px;
+  }
+}
+
+/*tablet and desktop*/
+@media  (min-width: 1600px) {
+  :root {
+    --f-size-h1: 52px;
+    --f-size-h2: 35px;
+    --f-size-btn: 20px;
+    --f-size-tel: 24px;
+
+    --f-size-header-text: 22px;
+    --f-size-text-call-back: 16px;
+    --f-size-main-counter-sub-txt:20px;
+    --f-main-subtitle: 22px;
+    --f-footer-subtitle: 22px;
+    --f-size-main-text: 18px;
+    --f-size-input: 22px;
+    --f-size-copyright: 12px;
+    --f-size-cookie: 20px;
+    --min-height-footer-container: 621px;
+    --max-width-container: 1600px;
+  }
+}
+
+
+
+
