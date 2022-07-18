@@ -12,9 +12,13 @@
   <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-900.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
   <title>3-5 Adaptive training</title>
 </head>
 <body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <header class="header">
   <div class="container">
@@ -53,7 +57,8 @@
     <p class="main__subtitle"><span>О нас</span></p>
 
     <p class="main__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить.</p>
-    <ul class="main__list">
+
+    <ul class="main__list main__list--default">
       <li class="main__item">
         <div class="main__item-counter"></div>
         <p class="main__item-text">Первое целевое преимущество</p>
@@ -71,6 +76,44 @@
         <p class="main__item-text">Четвертое целевое преимущество</p>
       </li>
     </ul>
+
+    <div class="swiper">
+    <ul class="swiper-wrapper">
+      <li class="main__item swiper-slide">
+        <div class="main__item-counter"></div>
+        <p class="main__item-text">Первое целевое преимущество</p>
+      </li>
+      <li class="main__item swiper-slide">
+        <div class="main__item-counter"></div>
+        <p class="main__item-text">Второе целевое преимущество</p>
+      </li>
+      <li class="main__item swiper-slide">
+        <div class="main__item-counter"></div>
+        <p class="main__item-text">Третье целевое преимущество</p>
+      </li>
+      <li class="main__item swiper-slide">
+        <div class="main__item-counter"></div>
+        <p class="main__item-text">Четвертое целевое преимущество</p>
+      </li>
+    </ul>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      </div>
+
+    <script>
+      const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+
   </section>
   </div>
 </main>

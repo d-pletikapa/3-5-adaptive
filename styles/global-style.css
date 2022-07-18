@@ -152,3 +152,8 @@ button {
 h2 {
   font-weight: 700;
 }
+
+.swiper {
+  width: 100%;
+  height: 182px;
+}
