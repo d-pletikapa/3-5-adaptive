@@ -139,6 +139,8 @@ iframe {
 
 section {
   padding:  var(--paddging-section);
+  margin: 0 auto;
+  max-width: var(--max-width-container);
 }
 
 h1 {

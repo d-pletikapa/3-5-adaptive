@@ -55,7 +55,7 @@
 
 .header .container::after {
   position: absolute;
-  width: var(--max-width-container);
+  width: 100%;
   height: var(--min-height-header-container);
   content: '';
   background-size: cover;

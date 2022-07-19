@@ -98,15 +98,7 @@
   counter-increment: count;
 }
 
-.container--deal-bg {
-  position: relative;
-  background-color: rgba(47, 50, 75, 0.85);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover, cover;
-  min-height: var(--min-height-footer-container);
 
-}
 
 
 
