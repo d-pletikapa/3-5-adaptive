@@ -9,8 +9,8 @@
 @media  (min-width: 780px) {
   :root {
     --min-height-header-container: 528px;
-    --paddging-container: 0 30px;
-    --paddging-section: 30px 30px;
+    --paddging-container: 0 15px 0 30px;
+    --paddging-section: 30px 15px 30px 30px;
     --max-width-container: 1024px;
   }
 
@@ -24,7 +24,7 @@
   :root {
     --min-height-header-container: 732px;
     --paddging-container: 0 200px;
-    --paddging-section: 30px 200px;
+    --paddging-section: 30px 182px 30px 200px;
     --max-width-container: 1600px;
   }
 }
