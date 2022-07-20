@@ -186,6 +186,7 @@
 
   .main__item-text {
     line-height: 28px;
+    max-width: 100%;
   }
 
   .main__item {
